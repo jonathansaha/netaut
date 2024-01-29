@@ -1,5 +1,4 @@
 ---
 - name: Retrieve IOS-XR version
-  cisco.iosxr_command:
+  iosxr_command:
     commands: show version
-  when: ansible_network_os == 'cisco.iosxr'
