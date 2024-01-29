@@ -1,4 +1,7 @@
 ---
-- name: Retrieve IOS-XR version
-  iosxr_command:
-    commands: show version
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Retrieve IOS-XR version
+      cisco.iosxr.iosxr_command:
+        commands: show version
